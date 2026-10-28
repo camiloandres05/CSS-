@@ -1,8 +1,13 @@
-body{color: violet;
+body {
+  color: violet;
+}
+heather {
+  color: blue;
+}
+p {
+  color: blueviolet;
 }
 
-p{color: slateblue}
-
-
-.color {color: blueviolet
-fond-size  : 12px; }
+.color {
+  color: rgb(46, 226, 43) fond-size 12px;
+}
