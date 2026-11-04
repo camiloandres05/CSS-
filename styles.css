@@ -1,13 +1,67 @@
+/* Herencia: tipografía y color base */
 body {
-  color: violet;
-}
-heather {
-  color: blue;
-}
-p {
-  color: blueviolet;
+  font-family: sans-serif;
+  color: #904987;
+  font-size: 16px;
 }
 
-.color {
-  color: rgb(46, 226, 43) fond-size 12px;
+.titulo {
+  color: darkblue;
+}
+
+
+.descripcion {
+  color: steelblue;
+}
+
+.precio {
+  color: green;
+  font-weight: bold;
+}
+
+
+
+/* Selectores combinados: aislar pintura por zonas */
+header nav ul li a {
+  color: blue;
+}
+header {
+  background-image:url(https://i.pinimg.com/736x/52/da/ad/52daade49f86046438917853f596416b.jpg);
+}
+
+aside ul li a {
+  color: green;
+}
+main { 
+  background-color: cadetblue;
+}
+article {
+  padding: 12px 34px 34px 34px;
+  
+}
+article { 
+  margin: 3%; 
+}
+footer ul li a {
+  color: red;
+}
+aside {
+  background-color: #020343;
+}
+
+/* Cascada vs Especificidad */
+.btn-comprar {
+  color: orange; /* clase */
+}
+
+#btn-destacado {
+  color: purple; /* ID aplasta la clase */
+}
+
+/* Refactorización: evita IDs, usa clases */
+article a.btn-comprar {
+  color: orange;
+}
+footer {
+  background-color: tomato;
 }
