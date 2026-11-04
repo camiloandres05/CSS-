@@ -1,67 +1,83 @@
-/* Herencia: tipografía y color base */
+@import url('https://googleapis.com');
+
+:root {
+  --color-primario: #d7dbe4;
+  --color-texto: #f2f3f3;
+  --color-terciario: #ffffff;
+  --color-fondo: #ec7514;
+  --color-tarjeta: rgb(217, 108, 24);
+  --color-seccion: rgb(8, 9, 9);
+  --color-pagina-fondo: rgb(23, 21, 21);
+
+  --fuente-principal: 'Story Script', cursive;
+
+  --espaciado-pequeno: 8px;
+  --espaciado-medio: 16px;
+  --espaciado-grande: 24px;
+  --espaciado-extra-grande: 34px;
+  --margen-tarjeta: 3%;
+  --padding-header: 6%;
+}
+
 body {
-  font-family: sans-serif;
-  color: #904987;
-  font-size: 16px;
-}
-
-.titulo {
-  color: darkblue;
+  font-family: var(--fuente-principal);
+  color: var(--color-primario);
+  font-size: var(--espaciado-medio);
+  background-color: var(--color-pagina-fondo);
 }
 
 
-.descripcion {
-  color: steelblue;
+header {
+  background-image: url('https://i.pinimg.com/1200x/71/e0/ac/71e0ac5c83c18db720aec4a5e54a3e7a.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: var(--padding-header);
+  border-radius: 50px;
+}
+
+header nav ul li a {
+  color: var(--color-terciario);
+}
+
+main {
+  background-color: var(--color-fondo);
+}
+
+section {
+  background-color: var(--color-seccion);
+  padding: var(--espaciado-grande);
+}
+
+article {
+  background-color: var(--color-tarjeta);
+  margin: var(--margen-tarjeta);
+  padding: var(--espaciado-medio) var(--espaciado-extra-grande) var(--espaciado-extra-grande) var(--espaciado-extra-grande);
+  border-radius: 20px;
 }
 
 .precio {
-  color: green;
+  color: var(--color-texto);
   font-weight: bold;
 }
 
-
-
-/* Selectores combinados: aislar pintura por zonas */
-header nav ul li a {
-  color: blue;
-}
-header {
-  background-image:url(https://i.pinimg.com/736x/52/da/ad/52daade49f86046438917853f596416b.jpg);
+aside {
+  background-color: var(--color-fondo);
 }
 
 aside ul li a {
-  color: green;
-}
-main { 
-  background-color: cadetblue;
-}
-article {
-  padding: 12px 34px 34px 34px;
-  
-}
-article { 
-  margin: 3%; 
-}
-footer ul li a {
-  color: red;
-}
-aside {
-  background-color: #020343;
+  color: var(--color-texto);
 }
 
-/* Cascada vs Especificidad */
-.btn-comprar {
-  color: orange; /* clase */
+.btn-comprar,
+.btn-comprar.btn-destacado {
+  color: var(--color-texto);
 }
 
-#btn-destacado {
-  color: purple; /* ID aplasta la clase */
-}
-
-/* Refactorización: evita IDs, usa clases */
-article a.btn-comprar {
-  color: orange;
-}
 footer {
-  background-color: tomato;
+  background-color: var(--color-fondo);
+}
+
+footer ul li a {
+  color: var(--color-terciario);
 }

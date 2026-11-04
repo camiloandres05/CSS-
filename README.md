@@ -1,1 +1,3 @@
 .# CSS-
+HALLAZGOS
+haciendo el trabajo qie tuvimos que hacer que era la mision dos y la mision 3 caimos en cuenta que a medida que ma cosas le meiamos a nuestra oagina web mas problemas podian salir de ellos ejemplo con el root como cada vez teniamos mas colores de distintos lugares teniamos que odenarlos de manera efectiva de manera que si cambiabamos un color en root se cambiaran los correspondientes que tiene que ver tmabien los espaciados tuve un problema con los archivos de px y %
