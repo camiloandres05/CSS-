@@ -1,8 +1,10 @@
 
 @import url('https://googleapis.com');
-@import url(estilos/buttom.css);
-@import url(estilos/tarjeta.css);
-@import url(estilos/layout.css);
+@import url(estilos/template/buttom.css);
+@import url(estilos/template/tarjeta.css);
+@import url(estilos/template/footer.css);
+@import url(estilos/template/heather.css);
+@import url(estilos/template/layout.css);
 :root {
     --color-primario: #f4f6fa;
     --color-texto-oscuro: #171515;
@@ -22,7 +24,6 @@
     --margen-tarjeta: 3%;
     --padding-header: 6%;
 }
-
 .pagina {
     font-family: var(--fuente-principal);
     color: var(--color-primario);
@@ -30,26 +31,11 @@
     background-color: var(--color-pagina-fondo);
     margin: 0;
 }
-.encabezado {
-    background-image: url('https://i.pinimg.com/1200x/71/e0/ac/71e0ac5c83c18db720aec4a5e54a3e7a.jpg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    padding: var(--padding-header);
-    border-radius: 50px;
-}
 
 
 
-.menu__enlace {
-    color: var(--color-acento-cian); 
-    text-decoration: none;
-    transition: color 0.3s ease;
-}
 
-.menu__enlace:hover {
-    color: var(--color-primario);
-    text-decoration: underline;
-}
+
+
 
 

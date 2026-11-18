@@ -1,0 +1,10 @@
+.menu__enlace {
+    color: var(--color-acento-cian); 
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.menu__enlace:hover {
+    color: var(--color-primario);
+    text-decoration: underline;
+}
