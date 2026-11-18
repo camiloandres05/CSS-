@@ -1,0 +1,28 @@
+
+.btn {
+    position: relative;
+    display: inline-block;
+    background-color: var(--color-texto-oscuro);
+    color: var(--color-acento-cian);
+    padding: var(--espaciado-pequeno) var(--espaciado-medio);
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+
+
+.btn:hover {
+    color: var(--color-primario);
+    transform: translateY(-2px);
+}
+
+.btn:hover::before {
+    transform: translateX(0);
+}
+
+.btn:hover::after {
+    opacity: 1;
+    transform: translateX(0);
+}

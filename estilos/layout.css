@@ -1,0 +1,24 @@
+.lateral,
+.pie {
+    background-color: var(--color-fondo);
+    color: var(--color-texto-oscuro);
+    padding: var(--espaciado-medio);
+}
+
+.lateral__enlace,
+.pie__enlace {
+    color: var(--color-texto-oscuro);
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.lateral__enlace:hover,
+.pie__enlace:hover {
+    color: var(--color-terciario);
+}
+
+
+.catalogo {
+    background-color: var(--color-seccion);
+    padding: var(--espaciado-grande);
+}

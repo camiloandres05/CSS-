@@ -1,0 +1,28 @@
+.tarjeta {
+    background-color: var(--color-tarjeta);
+    color: var(--color-texto-oscuro); 
+    margin: var(--margen-tarjeta);
+    padding: var(--espaciado-medio) var(--espaciado-extra-grande) var(--espaciado-extra-grande);
+    border-radius: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.tarjeta:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+}
+
+
+.tarjeta__titulo--destacado {
+    color: var(--color-terciario);
+}
+
+
+
+.tarjeta__precio {
+    font-weight: bold;
+    color: var(--color-terciario);
+}
+
+
+
