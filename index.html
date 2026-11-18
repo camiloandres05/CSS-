@@ -5,82 +5,90 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vehículos de Todo Tipo</title>
     <link rel="stylesheet" href="styles.css">
-    
 </head>
-<body>
+<body class="pagina">
 
-    <header> 
-    
-        <h1>VEHICULOS DE TODO TIPO</h1>
-        <p>Vehículos nuevos en solo una página</p>
-        <nav>
-            <ul>
-                <li><a href="https://www.cargurus.com/es/spt-carros-usados-Seattle_L37788">Carros</a></li>
-                <li><a href="https://powersports.honda.com/motorcycle">Motos</a></li>
-                <li><a href="https://powersports.honda.com/atv">Cuatrimotos</a></li>
-                <li><a href="https://www.ktm.com/en-us/models/naked-bike.html">Naked</a></li>
+    <!-- ENCABEZADO -->
+    <header class="encabezado">
+        <h1 class="encabezado__titulo">VEHÍCULOS DE TODO TIPO</h1>
+        <p class="encabezado__subtitulo">Vehículos nuevos en solo una página</p>
+
+        <nav class="menu">
+            <ul class="menu__lista">
+                <li class="menu__item"><a class="menu__enlace" href="https://www.cargurus.com/es/spt-carros-usados-Seattle_L37788" target="_blank" rel="noopener noreferrer">Carros</a></li>
+                <li class="menu__item"><a class="menu__enlace" href="https://powersports.honda.com/motorcycle" target="_blank" rel="noopener noreferrer">Motos</a></li>
+                <li class="menu__item"><a class="menu__enlace" href="https://powersports.honda.com/atv" target="_blank" rel="noopener noreferrer">Cuatrimotos</a></li>
+                <li class="menu__item"><a class="menu__enlace" href="https://www.ktm.com/en-us/models/naked-bike.html" target="_blank" rel="noopener noreferrer">Naked</a></li>
             </ul>
         </nav>
     </header>
 
-    <div class="main-container">
-        <main>
-            <section>
-                <article>
-                    <h2>KTM Super Duke 1290</h2>
-                    <p>La moto naked con más torque en el mundo, perfecta para ganar piques de inicio.</p>
-                    <p class="precio">125.000.000</p>
-                    <a href="#" class="btn-comprar" id="btn-destacado">Comprar</a>
-                </article>
+    <!-- CONTENIDO PRINCIPAL -->
+    <div class="contenedor">
+        <main class="principal">
 
-                <article>
-                    <h2>SUPRA</h2>
-                    <p>El carro más famoso por la increíble cantidad de modificaciones que se le pueden hacer.</p>
-                    <p class="precio">69.000.000</p>
-                    <a href="#" class="btn-comprar">Comprar</a>
-                </article>
+            <section class="catalogo">
+                <h2 class="catalogo__titulo">Destacados</h2>
 
-                <article>
-                    <h2>NISSAN GTR 34</h2>
-                    <p>Un carro mítico, muy buscado por coleccionistas por pertenecer al rey del drift en todo Japón.</p>
-                    <p class="precio">178.000.000</p>
-                    <a href="#" class="btn-comprar">Comprar</a>
-                </article>
+                <div class="catalogo__tarjetas">
+                    <article class="tarjeta">
+                        <h3 class="tarjeta__titulo">KTM Super Duke 1290</h3>
+                        <p class="tarjeta__descripcion">Una de las motos naked con más torque del mundo, perfecta para ganar piques de inicio.</p>
+                        <p class="tarjeta__precio">$125.000.000 COP</p>
+                        <a href="" class="btn" id="btn-destacado">Comprar</a>
+                    </article>
 
-                <article>
-                    <h2 class="titulo-destacado">DODGE MUSTANG HELLCAT</h2> <!-- Nota: El Hellcat es de Dodge/SRT y el Mustang es de Ford, ¡dos leyendas juntas! -->
-                    <p>Un carro mítico por la manera en que suena; parecería que hubiera un gato encerrado debajo de su capó.</p>
-                    <p class="precio">230.000.000</p>
-                    <a href="#" class="btn-comprar">Comprar</a>
-                </article>
+                    <article class="tarjeta">
+                        <h3 class="tarjeta__titulo">SUPRA</h3>
+                        <p class="tarjeta__descripcion">El carro más famoso por la increíble cantidad de modificaciones que se le pueden hacer.</p>
+                        <p class="tarjeta__precio">$69.000.000 COP</p>
+                        <a href="#" class="btn">Comprar</a>
+                    </article>
+
+                    <article class="tarjeta">
+                        <h3 class="tarjeta__titulo">NISSAN GT-R R34</h3>
+                        <p class="tarjeta__descripcion">Un carro mítico, muy buscado por coleccionistas y ligado a la leyenda del drift en Japón.</p>
+                        <p class="tarjeta__precio">$178.000.000 COP</p>
+                        <a href="#" class="btn">Comprar</a>
+                    </article>
+
+                    <article class="tarjeta tarjeta--destacada">
+                        <h3 class="tarjeta__titulo tarjeta__titulo--destacado">DODGE CHALLENGER SRT HELLCAT</h3>
+                        <p class="tarjeta__descripcion">Un carro mítico por la manera en que suena; parecería que hubiera un gato encerrado debajo de su capó.</p>
+                        <p class="tarjeta__precio">$230.000.000 COP</p>
+                        <a href="#" class="btn">Comprar</a>
+                    </article>
+                </div>
             </section>
 
-            <!-- Se eliminó el <article> innecesario que envolvía al aside -->
-            <aside>
-                <h2>Páginas y redes sociales</h2>
-                <ul>
-                    <li><a href="#">Instagram</a></li>
-                    <li><a href="#">Facebook</a></li>
-                    <li><a href="#">TikTok</a></li>
+            <aside class="lateral">
+                <h2 class="lateral__titulo">Páginas y redes sociales</h2>
+                <ul class="lateral__lista">
+                    <li class="lateral__item"><a class="lateral__enlace" href="#">Instagram</a></li>
+                    <li class="lateral__item"><a class="lateral__enlace" href="#">Facebook</a></li>
+                    <li class="lateral__item"><a class="lateral__enlace" href="#">TikTok</a></li>
+                    <li class="pie__item"><a class="pie__enlace" href="https://facebook.com" target="_blank" rel="noopener noreferrer">Facebook</a></li>
+            <li class="pie__item"><a class="pie__enlace" href="https://instagram.com" target="_blank" rel="noopener noreferrer">Instagram</a></li>
+            <li class="pie__item"><a class="pie__enlace" href="https://twitter.com" target="_blank" rel="noopener noreferrer">Twitter</a></li>
                 </ul>
             </aside>
+
         </main>
+        
     </div>
 
-    <footer>
-        <p>&copy; 2026 Vehículos de Todo Tipo. Todos los derechos reservados.</p>
-        <ul class="redes-sociales">
-            <li><a href="https://facebook.com" target="_blank" rel="noopener noreferrer">Facebook</a></li>
-            <li><a href="https://instagram.com" target="_blank" rel="noopener noreferrer">Instagram</a></li>
-            <li><a href="https://twitter.com" target="_blank" rel="noopener noreferrer">Twitter</a></li>
+    <!-- PIE DE PÁGINA -->
+    <footer class="pie">
+        
+        <ul class="pie__redes">
+            
         </ul>
+        <div class="textos-prueba">
+            <p class="textos-prueba__parrafo">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam veniam ut illum id dicta iure, suscipit dolores dolor, rem facere voluptatum at magnam optio.</p>
+            <p class="textos-prueba__parrafo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur nostrum minima perferendis, animi soluta quas voluptas quasi, ipsam labore veniam voluptates odit.</p>
+            <p class="pie__texto">&copy; 2026 Vehículos de Todo Tipo. Todos los derechos reservados.</p>
+        </div>
     </footer>
-
-    <!-- Los párrafos de relleno de prueba se movieron ANTES de cerrar el body -->
-    <div class="textos-prueba">
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam veniam ut illum id dicta iure, suscipit dolores dolor, rem facere voluptatum at magnam optio.</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur nostrum minima perferendis, animi soluta quas voluptas quasi, ipsam labore veniam voluptates odit.</p>
-    </div>
 
 </body>
 </html>
