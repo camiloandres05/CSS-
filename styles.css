@@ -1,10 +1,10 @@
 
 @import url('https://googleapis.com');
-@import url(estilos/template/buttom.css);
-@import url(estilos/template/tarjeta.css);
-@import url(estilos/template/footer.css);
-@import url(estilos/template/heather.css);
-@import url(estilos/template/layout.css);
+@import url(estilos/buttom.css);
+@import url(estilos/heather.css);
+@import url(estilos/tarjeta.css);
+@import url(template/footer.css);
+@import url(template/layout.css);
 :root {
     --color-primario: #f4f6fa;
     --color-texto-oscuro: #171515;
@@ -23,13 +23,6 @@
     --espaciado-extra-grande: 34px;
     --margen-tarjeta: 3%;
     --padding-header: 6%;
-}
-.pagina {
-    font-family: var(--fuente-principal);
-    color: var(--color-primario);
-    font-size: var(--espaciado-medio);
-    background-color: var(--color-pagina-fondo);
-    margin: 0;
 }
 
 

@@ -22,3 +22,15 @@
     background-color: var(--color-seccion);
     padding: var(--espaciado-grande);
 }
+
+.pagina {
+    font-family: var(--fuente-principal);
+    color: var(--color-primario);
+    font-size: var(--espaciado-medio);
+    background-color: var(--color-pagina-fondo);
+    margin: 0;
+}
+
+
+
+
